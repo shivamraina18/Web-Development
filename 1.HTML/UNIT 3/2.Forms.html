@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- the Form element represents a document section containing interactive control for submitting information -->
+    <!-- in my words form is omething in which we give some inputs is then send to some server or database -->
+    <!-- the action attribute specifies Where the form data Should be sent -->
+    <!-- The method attribute Specifies which HTTP method should be used(dont worry about this for now) -->
+
+
+    <!-- Some of the attributes used in this are type which will decide what type of form you want
+Placeholder which will tell what should be written in the form to tell the user,when we will write anything it will disappear
+Value is Used in Buttons to tell what should we write in box of button -->
+
+<!-- name - when data is sent it will be labeled under this name attribute -->
+
+    <form action="/HTML/UNIT 1/1.heading.html">
+        <button type="button">If u want just a button within form without submitting it use type attribute !!</button>
+        <div>
+            <label for="username">Enter Username :</label>
+            <input type="text" placeholder="Enter Username" id="username" name="username">
+        </div>
+
+        <div>
+            <label for="password">Enter Password: </label>
+            <input type="password" placeholder="Enter Password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="color">Select Any Color :</label>
+            <input type="color" id="color" name="Color">
+        </div>
+
+        <div>
+            <label for="time">Enter Time</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div>
+            <label for="Agree">Are You Gay</label>
+            <input type="checkbox" placeholder="Enter" id="Agree" name="Gender">
+        </div>
+
+        <div>
+            <label for="enter">Enter Your Age</label>
+            <input type="number" placeholder="Enter Your Age" id="enter" name="age" min="1" max="100">
+            <!-- u can use min max and step attribute in number type -->
+        </div>
+
+        <div>
+        <button>Submit !!</button>
+        </div>
+    </form>
+
+    <hr>
+<!-- button -->
+<form action="https://www.reddit.com/search">
+    <input type="text" name="q">
+    <button>Search</button>
+</form>
+
+<hr>
+<!-- checkbox -->
+
+<form action="/HTML/UNIT 2/2.Semantic_Markup.html">
+    <label for="checking">This is a Check-box</label>
+    <input type="checkbox" name="checking" id="checking" checked> 
+    <!-- you can use checked attribute to have also checkbox checked -->
+</form>
+
+<hr>
+<!-- radio button -->
+<!-- value attribute is something which tells what is going through while submitting the form,For buttons, decide on a value that reflects the action or purpose of the button. -->
+<form action="/HTML/UNIT 2/1.html5.html">
+    <h3>Select the Size</h3>
+    <label for="checking">S</label>
+    <input type="radio" name="checking" id="checking" value="s">
+
+    <label for="check">l</label>
+    <input type="radio" name="checking" id="check" value="l">
+
+    <label for="changing">xl</label>
+    <input type="radio" name="checking" id="changing" value="xl">
+
+    <button>Submit</button>
+</form>
+<hr>
+<!-- select buttton for drop down -->
+<div>
+<form>
+    <label for="check">Selct Any One</label>
+    <select name="Meals" id="check">
+        <option value="">--Select Any Option Below--</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Paneer">Paneer</option>
+        <option value="Palak">Palak</option>
+    </select>
+    <!-- Agar Chahiye toh Hum pre selected option b use kr skte ho selected attribute use krke -->
+</form> 
+</div>
+<hr>
+
+<form action="/HTML/UNIT 2/1.html5.html">
+    <label for="check">Volume</label>
+    <input type="range" id="check" min="0" max="10" name="vol" step="2">
+    <button>Search</button>
+    <!-- u can also use step attribute like step="2" to move from 0 to 2 then 2 to 4.... -->
+</form>
+
+<!-- Textarea is not a input like all the above we studied except select where we have options,it is a standalone element-->
+    <label for="request">Any Special Request?</label>
+    <br>
+    <textarea name="requests" id="request" cols="30" rows="10" placeholder="Type Here..."></textarea>
+
+
+<div>
+    <h3>Validation Demo</h3>
+    <form action="/HTML/UNIT 1/1.heading.html">
+        <label for="h">Enter Password for Validations</label>
+        <input type="password" id="h" name="pass" required minlength="5" maxlength="7">
+
+        <label for="a">Enter Your Email</label>
+        <input type="email" id="a" name="mail" required>
+
+        <label for="r">Enter URL</label>
+        <input type="url" id="r" name="url" required>
+        <button>Submit</button>
+    </form>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+<!-- Value Attribute:
+
+Choose a value that accurately represents the initial or default value of the element.
+For input fields, select a value that provides context or guidance to the user.
+For buttons, decide on a value that reflects the action or purpose of the button.
+ID Attribute:
+
+Select an ID that is unique within the HTML document.
+Use descriptive and meaningful IDs that reflect the purpose or content of the element.
+Avoid using spaces or special characters in IDs and adhere to naming conventions (e.g., camelCase or lowercase with hyphens).
+Name Attribute:
+
+Assign a name that identifies the input element when the form is submitted.
+Ensure that the name accurately describes the type of data being submitted.
+Use distinct names for different input elements within the same form to differentiate their submitted data. -->
